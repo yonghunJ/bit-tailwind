@@ -27,7 +27,7 @@
     /**
      * default scope for all components in workspace.
      **/
-    "defaultScope": "company.scope"
+    "defaultScope": "yonghunj.yonghun-bit-tailwind"
   },
   /**
    * main configuration for component dependency resolution.
