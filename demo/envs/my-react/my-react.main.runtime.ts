@@ -2,6 +2,8 @@ import { MainRuntime } from '@teambit/cli';
 import { ReactAspect, ReactMain } from '@teambit/react';
 import { EnvsAspect, EnvsMain } from '@teambit/envs';
 import { MyReactAspect } from './my-react.aspect';
+import { UseTailwindTransformer } from '@bit-foundations/styling.tailwind.webpack-transformer'
+import { tailwindConfigPath } from '@yonghunj/yonghun-bit-tailwind.envs.my-react/tailwind/tailwind.config'
 // import { previewConfigTransformer, devServerConfigTransformer } from './webpack/webpack-transformers';
 
 /**
@@ -17,11 +19,21 @@ export class MyReactMain {
   static runtime = MainRuntime;
 
   static async provider([react, envs]: [ReactMain, EnvsMain]) {
+    const {
+      previewConfigTransformer: twPreviewTransformer,
+      devServerConfigTransformer: twDevServerTransformer
+    } = UseTailwindTransformer(tailwindConfigPath);
+
     const templatesReactEnv = envs.compose(react.reactEnv, [
       /**
        * Uncomment to override the config files for TypeScript, Webpack or Jest
        * Your config gets merged with the defaults
        */
+
+      react.useWebpack({
+        previewConfig: [twPreviewTransformer],
+        devServerConfig: [twDevServerTransformer]
+      }),
 
       // react.overrideTsConfig(tsconfig),
       // react.useWebpack({
