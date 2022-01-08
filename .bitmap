@@ -21,6 +21,12 @@
         "mainFile": "index.ts",
         "rootDir": "demo/pages/welcome"
     },
+    "ui/button": {
+        "scope": "yonghunj.yonghun-bit-tailwind",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "yonghun-bit-tailwind/ui/button"
+    },
     "ui/card": {
         "scope": "",
         "version": "",
