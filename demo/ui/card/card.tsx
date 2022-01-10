@@ -1,6 +1,6 @@
 import React from 'react';
-import { Heading } from '@company/scope.ui.heading';
-import { Text } from '@company/scope.ui.text';
+import { Heading } from '@yonghunj/yonghun-bit-tailwind.ui.heading';
+import { Text } from '@yonghunj/yonghun-bit-tailwind.ui.text';
 import { ExternalLink } from '@teambit/design.ui.external-link';
 import { CopyBox } from '@teambit/documenter.ui.copy-box';
 

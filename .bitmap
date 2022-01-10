@@ -10,8 +10,8 @@
 
 {
     "envs/my-react": {
-        "scope": "",
-        "version": "",
+        "scope": "yonghunj.yonghun-bit-tailwind",
+        "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "demo/envs/my-react"
     },
@@ -23,7 +23,7 @@
     },
     "ui/button": {
         "scope": "yonghunj.yonghun-bit-tailwind",
-        "version": "0.0.1",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "yonghun-bit-tailwind/ui/button"
     },

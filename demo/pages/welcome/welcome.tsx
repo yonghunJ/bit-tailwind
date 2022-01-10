@@ -1,7 +1,7 @@
 import React from 'react';
-import { Card } from '@company/scope.ui.card';
-import { Heading } from '@company/scope.ui.heading';
-import { Text } from '@company/scope.ui.text';
+import { Card } from '@yonghunj/yonghun-bit-tailwind.ui.card';
+import { Heading } from '@yonghunj/yonghun-bit-tailwind.ui.heading';
+import { Text } from '@yonghunj/yonghun-bit-tailwind.ui.text';
 import styles from './welcome.module.scss';
 
 export function Welcome() {
